@@ -6,6 +6,7 @@ import { Link as LinkS } from "react-scroll/modules";
 export const Nav = styled.nav`
     display: flex;
     height: 80px;
+    width: 100%;
     /* margin-top: -80px; */
     justify-content: center;
     font-size: 1rem;
@@ -29,7 +30,6 @@ export const NavBarContainer = styled.div`
     flex-direction: row;   
     width: 100%;
     padding: 0 24px;
-    max-width: 1100px;
 `
 
 export const NavLogo = styled(LinkR)`
