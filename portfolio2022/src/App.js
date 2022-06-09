@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import NavBar from './components/Navbar';
+import {BrowserRouter as Router} from 'react-router-dom'
 import Contact from './pages/Contact';
 import Intro from './pages/Intro';
 import Projects from './pages/Projects';
@@ -8,14 +8,9 @@ import Stack from './pages/Stack';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
+    <Router>
       <Intro />
-      <Stack />
-      <Projects />
-      <Contact />
-
-    </div>
+    </Router>
   );
 }
 
