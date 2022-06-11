@@ -3,14 +3,33 @@ import styled from "styled-components";
 export const StackSection = styled.div`
 background-color: #457383;
 height:100vh;
+
+@media screen and (max-width: 850px) {
+        height:130vh;
+    }
 `
 
 export const StackGrid = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin: 2rem auto;
     text-align: center;
     width: 70%;
+
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 65%;
+
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 80%;
+    }
+
+
 `
 
 export const FrontEndInfos = styled.div``
@@ -32,7 +51,7 @@ export const Langages = styled.div`
     margin: 0.5rem auto;
     color: #457383;
     font-size: 20px;
-    width: 50%;
+    width: 60%;
     border-radius: 10px;
     padding: 0.3rem;
     font-weight: bold;
@@ -41,5 +60,14 @@ export const Langages = styled.div`
         background-color: #FF6F59;
         color: #F8EFDB;
         transition: 0.3s ease-in-out ;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 60%
+    }
+
+    @media screen and (max-width: 1100px) {
+        width: 60%;
+        
     }
 `

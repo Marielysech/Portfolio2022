@@ -17,3 +17,12 @@ em {
 
 }
 
+.blur:not(.noBlur){
+  -webkit-filter: blur(8px);
+  backdrop-filter: blur(5px);
+}
+
+.blur:not(.noBlur) {
+  -webkit-filter: blur(8px);
+  backdrop-filter: blur(5px);
+}

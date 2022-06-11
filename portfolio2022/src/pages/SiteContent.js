@@ -16,9 +16,22 @@ const SectionContainer = styled.div`
   padding-top: 2rem; */
 `
 
-
 export default function SiteContent() {
+  
+  
+  const [isActive, setIsActive] = useState(false)
+  const [blur, setBlur] = useState('noBlur')
 
+  const toggleActive = (event) => {
+    setIsActive(!isActive)
+    blur === 'noBlur' ? setBlur('blur') : setBlur('noBlur')
+
+    console.count('event'  + isActive)
+    console.log('event' +isActive)
+  }
+
+  console.count(isActive)
+  console.log(isActive)
   const [isOpen, SetIsOpen] = useState(false)
 
   const toggleOpen = () => {
@@ -26,11 +39,12 @@ export default function SiteContent() {
   }
 
     return (
-      <div>
+      <div className={blur}>
         <MenuDrawer isOpen={isOpen} toggleOpen={toggleOpen}/>
         <NavBar isOpen={isOpen} toggleOpen={toggleOpen}/>
         <Stack />
-        <Projects/>
+        <About />
+        <Projects toogleActive={toggleActive} blur={blur}/>
         <Footer />
       </div>
     );

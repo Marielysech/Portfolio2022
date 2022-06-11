@@ -15,6 +15,10 @@ display: flex;
 flex-flow: column;
 max-width: 95%;
 position: relative;
+
+&:hover {
+  backdrop-filter: blur(5px);
+}
 `
 export const Title = styled.h3`
   font-weight: bold;
