@@ -11,6 +11,15 @@
     margin: 1rem auto;
 }
 
+.stackTitle {
+    color: #F8EFDB;
+    font-size: 30px;
+    border-bottom: 5px solid #FF6F59;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
 @media screen and (max-width: 900px) {
 
     .stackContainer {
@@ -26,4 +35,6 @@
     }
 
 }  
+
+
 

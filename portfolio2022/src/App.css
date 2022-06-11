@@ -4,3 +4,16 @@
   padding: 0;
   font-family: 'IBM Plex Sans', sans-serif;
 }
+
+em {
+  border-bottom: 10px solid #FF6F59;
+  transition:cubic-bezier(1, 0, 0, 1);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.stackTitle {
+
+  font-family:  'Space Grotesk', sans-serif;
+
+}
+

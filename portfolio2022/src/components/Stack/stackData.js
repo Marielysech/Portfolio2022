@@ -8,8 +8,8 @@ import {RiHtml5Line} from 'react-icons/ri'
 
 export const stackObject = {
     description: '',
-    frontend: [],
-    backend: [],
+    frontEnd: ['ReactJS', 'JavaScript', 'CSS3', 'HTML5', 'DOM Manipulation'],
+    backEnd: ['NodeJS', 'Express', 'MongoDB',  ],
     stack: [
         {
           logo: <RiHtml5Line />,

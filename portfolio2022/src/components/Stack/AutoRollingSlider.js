@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Divider from '@mui/material/Divider';
-import './AutoScrolling.css';
+import './Stack.css';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
@@ -11,8 +11,6 @@ import Marquee from 'react-fast-marquee';
 import { padding } from '@mui/system';
 
 
-const data = stackObject.stack
-console.log(stackObject.stack.map(item => item.name))
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,

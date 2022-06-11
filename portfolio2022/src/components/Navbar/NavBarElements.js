@@ -37,10 +37,20 @@ export const NavLogo = styled(LinkR)`
     justify-self: flex-start;
     display: flex;
     color: #F8EFDB;
+    /* color: #FF6F59; */
+    font-size: 30px;
     align-items: center;
     margin-left: 24px; 
     font-weight: bold;
     text-decoration: none; 
+    text-shadow: 3px 3px 0px #FF6F59;
+
+    &:hover { 
+        color: #FF6F59;
+        transition: 0.3s ease-in-out;
+        text-shadow: 3px 3px 0px #F8EFDB;
+
+    }
 `
 
 export const MobileMenu = styled.div`
