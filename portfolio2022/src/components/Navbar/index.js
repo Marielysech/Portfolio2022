@@ -20,10 +20,10 @@ export default function NavBar({toggleOpen, isOpen}) {
               </MobileMenu>
               {/* // all links of the navBar to scroll to indicated section */}
               <NavMenu isOpen={isOpen}>
-                <NavLinks to='about'>About</NavLinks>
-                <NavLinks to='projects'>Projects</NavLinks>
-                <NavLinks to='stack'>Stack</NavLinks>
-                <NavLinks to='contact'>Contact</NavLinks>
+                <NavLinks to='about' offset={-80}>About</NavLinks>
+                <NavLinks to='projects' offset={-80}>Projects</NavLinks>
+                <NavLinks to='stack'offset={-80} >Stack</NavLinks>
+                <NavLinks to='contact'offset={-80}>Contact</NavLinks>
               </NavMenu>
           </NavBarContainer>
         </Nav>

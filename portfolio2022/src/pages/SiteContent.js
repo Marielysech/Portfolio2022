@@ -7,6 +7,15 @@ import Projects from "../components/Projects";
 import { Contact } from "../components/Contact";
 import Intro from "../components/Intro";
 import Footer from "../components/Footer";
+import styled from "styled-components";
+
+
+const SectionContainer = styled.div`
+  width: 100%;
+  /* margin-top: -2rem;
+  padding-top: 2rem; */
+`
+
 
 export default function SiteContent() {
 
@@ -20,12 +29,8 @@ export default function SiteContent() {
       <div>
         <MenuDrawer isOpen={isOpen} toggleOpen={toggleOpen}/>
         <NavBar isOpen={isOpen} toggleOpen={toggleOpen}/>
-        <Projects />
-
-        <Intro />
-        <About />
         <Stack />
-        <Contact />
+        <Projects/>
         <Footer />
       </div>
     );

@@ -8,8 +8,7 @@ import { SectionTitle } from '../GlobalElements'
 const Projects = () => {
   return (
     <ProjectsSection>
-      <SectionTitle>Hello</SectionTitle>
-      <LeftFastAccess />
+      <SectionTitle id='projects'>My projects</SectionTitle>
       <ProjectGrid>
         {data.sectionDetails.map((item, index) => <ProjectTile key={index} item={item} />)}
       </ProjectGrid>

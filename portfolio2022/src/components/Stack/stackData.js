@@ -1,33 +1,45 @@
+//Logo stack
+import {SiMongodb, SiExpress} from 'react-icons/si'
+import {FaReact, FaNodeJs} from 'react-icons/fa'
+import {IoLogoCss3, IoLogoJavascript} from 'react-icons/io'
+import {RiHtml5Line} from 'react-icons/ri'
+
+
+
 export const stackObject = {
     description: '',
-    stack: {
-        1: {
-            name: 'React',
-            img: ,
+    frontend: [],
+    backend: [],
+    stack: [
+        {
+          logo: <RiHtml5Line />,
+          name: 'HTML5',
         },
-        2: {
-            name: 'Javascript',
-            img: ,
+        {
+          logo: <SiMongodb/>,
+          name: 'MONGODB',
         },
-        3: {
-            name: '',
-            img: ,
+        {
+          logo: <FaReact/>,
+          name: 'React',
         },
-        4: {
-            name: ,
-            img: ,
+        {
+          logo: <FaNodeJs/>,
+          name: 'NodeJS',
         },
-        5: {
-            name: ,
-            img: ,
+        {
+          logo: <SiExpress/>,
+          name: 'ExpressJS',
         },
-        6: {
-            name: ,
-            img: ,
+        {
+          logo: <IoLogoCss3/>,
+          name: 'CSS3',
         },
-        7: {
-            name: ,
-            img: ,
-        }
-    }
+        {
+          logo: <IoLogoJavascript/>,
+          name: 'JavaScript',
+        },
+      ]
+      
 }
+

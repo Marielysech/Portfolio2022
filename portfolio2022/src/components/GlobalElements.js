@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const SectionTitle = styled.h1`
 
     font-size: 64px;
-    color: white;
-    margin: 20px;
+    color: #F8EFDB;
     top:0;
-
+    padding-left: 1rem;
+    margin-bottom: 1rem;
     &::after {
         content: "○";
         font-size: 24px;

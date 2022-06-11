@@ -1,0 +1,29 @@
+.itemStack:hover {
+    background-color: #FF6F59;
+    border: 2px solid #F8EFDB;
+    color: #F8EFDB;
+    transition: 0.3s ease-in;
+}
+
+
+.stackContainer {
+    width: 65%;
+    margin: 1rem auto;
+}
+
+@media screen and (max-width: 900px) {
+
+    .stackContainer {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .stackContainer {
+        width: 100%;
+    }
+
+}  
+

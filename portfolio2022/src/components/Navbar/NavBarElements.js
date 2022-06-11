@@ -22,7 +22,7 @@ export const Nav = styled.nav`
 `
 
 export const NavBarContainer = styled.div`
-    background-color: paleturquoise;
+    background-color: #457383;
     justify-content: space-between;
     z-index: 1;
     height: 80px;
@@ -36,6 +36,7 @@ export const NavLogo = styled(LinkR)`
     cursor: pointer;
     justify-self: flex-start;
     display: flex;
+    color: #F8EFDB;
     align-items: center;
     margin-left: 24px; 
     font-weight: bold;
@@ -62,7 +63,7 @@ export const NavLinks = styled(LinkS)`
     align-items: center;
     cursor: pointer;
     padding: 0 1rem;
-    color: black;
+    color: #F8EFDB;
     justify-content: center;
     transition: 0.2s ease-in-out;
 
