@@ -13,7 +13,11 @@ export const DrawerContainer = styled.aside`
     left: 0;
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen}) => (isOpen ? '90%' : '0')};
-    top: ${({isOpen}) => (isOpen ? '0' : '-100%')} 
+    top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+
+    @media screen and (min-width: 968px) {
+        opacity: 0;
+    }
 `
 
 export const CloseIcon = styled(FaTimes)`
