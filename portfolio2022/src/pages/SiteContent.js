@@ -40,8 +40,10 @@ export default function SiteContent() {
 
     return (
       <div className={blur}>
+        
         <MenuDrawer isOpen={isOpen} toggleOpen={toggleOpen}/>
         <NavBar isOpen={isOpen} toggleOpen={toggleOpen}/>
+        <Intro />
         <Stack />
         <About />
         <Projects toogleActive={toggleActive} blur={blur}/>

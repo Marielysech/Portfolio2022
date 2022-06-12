@@ -13,7 +13,7 @@ export default function NavBar({toggleOpen, isOpen}) {
       <>
         <Nav>
           <NavBarContainer>
-              <NavLogo to='/'>MaLy</NavLogo>
+              <NavLogo to='intro'>MaLy</NavLogo>
               {/* // responsive drawer containing hamburger menu icons */}
               <MobileMenu onClick={toggleOpen}>
                 <FaBars />
@@ -21,8 +21,8 @@ export default function NavBar({toggleOpen, isOpen}) {
               {/* // all links of the navBar to scroll to indicated section */}
               <NavMenu isOpen={isOpen}>
                 <NavLinks to='about' offset={-80}>About</NavLinks>
-                <NavLinks to='projects' offset={-80}>Projects</NavLinks>
                 <NavLinks to='stack'offset={-80} >Stack</NavLinks>
+                <NavLinks to='projects' offset={-80}>Projects</NavLinks>
                 <NavLinks to='contact'offset={-80}>Contact</NavLinks>
               </NavMenu>
           </NavBarContainer>

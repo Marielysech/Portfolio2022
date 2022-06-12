@@ -32,7 +32,7 @@ export const NavBarContainer = styled.div`
     padding: 0 24px;
 `
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
     cursor: pointer;
     justify-self: flex-start;
     display: flex;

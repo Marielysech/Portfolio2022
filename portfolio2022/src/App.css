@@ -11,6 +11,10 @@ em {
   font-family: 'Space Grotesk', sans-serif;
 }
 
+small {
+  font-size: 80px;
+}
+
 .enhancedTitle {
   border-bottom: 10px solid #FF6F59;
   transition:cubic-bezier(1, 0, 0, 1);
