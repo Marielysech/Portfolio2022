@@ -11,7 +11,7 @@ const Stack = () => {
     <StackSection id='stack'>
        <SectionTitle >My Stack</SectionTitle>
        <Subtitle>
-          <em>MERN</em> Stack
+          <em className='enhancedTitle'>MERN</em> Stack
        </Subtitle>
        <StackGrid>
           <FrontEndInfos>

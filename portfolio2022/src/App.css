@@ -6,6 +6,12 @@
 }
 
 em {
+  border-bottom: 2px solid #FF6F59;
+  transition:cubic-bezier(1, 0, 0, 1);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.enhancedTitle {
   border-bottom: 10px solid #FF6F59;
   transition:cubic-bezier(1, 0, 0, 1);
   font-family: 'Space Grotesk', sans-serif;
