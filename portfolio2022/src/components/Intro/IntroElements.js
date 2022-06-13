@@ -1,8 +1,10 @@
-import styled from "styled-components"
+import styled, { keyframes } from "styled-components"
+import { Link as LinkS } from "react-scroll/modules";
+import {BsArrowDownCircleFill} from 'react-icons/bs'
 
 export const IntroSection = styled.div`background-color: #457383;
 height:100vh;
-padding-top: 10rem;
+padding-top: 2rem;
 
 
 /* @media screen and (max-width: 900px) {
@@ -23,13 +25,30 @@ padding-top: 10rem;
 `
 
 export const Container = styled.div`
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+
+    @media screen and (max-width: 800px) {
+            font-size: 100px;
+            height: 60%;
+            margin-bottom: 7rem;
+
+        };
+
+    
 `
+
+   
 
 
     export const FullName = styled.div`
         width: 100%;
         font-size: 120px;
-        padding-bottom: 6rem;
+        font-weight: 800;
+        padding-bottom: 1rem;
         padding-right: 2rem;
         font-family:'Space Grotesk', sans-serif;
         
@@ -38,7 +57,110 @@ export const Container = styled.div`
             /* font-size: 100px; */
             transition: 0.3s ease-in-out;
         }
-    `
-    export const FullTitle = styled.div``
 
-export const Links = styled.div``
+
+        @media screen and (max-width: 800px) {
+            font-size: 110px;
+
+        }
+
+        @media screen and (max-width: 650px) {
+        display: none;
+    };
+
+
+    `
+
+export const Links = styled(LinkS)`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* &:hover {
+        font-size: 20px
+    } */
+`
+
+export const CTAContainer = styled.div`
+    width: fit-content;
+    margin: -2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F8EFDB;
+    padding: 2rem 1rem 1rem 1rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid #F8EFDB;
+
+    @media screen and (max-width: 500px) {
+            display: none;
+        }
+
+    &:hover {
+        background-color: #F8EFDB;
+        transition: 0.3s ease-in-out;
+        color: #457383;
+    }
+`
+
+
+export const ScrollDown = styled.p`
+    color: inherit;
+    font-weight: bold;
+    font-size: 15px;
+    &:hover { 
+        font-size: 16px;
+    }
+`
+
+export const Icon = styled(BsArrowDownCircleFill)`
+    margin-top: 0.5rem;
+    color: inherit;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover { 
+        font-size: 25px;
+
+    }
+
+`
+const circleAnimation = keyframes`
+ 0% { -webkit-transform: rotate(0deg)}
+ 100% { -webkit-transform: rotate(360deg) }
+`
+
+export const CircleElements = styled.h2`
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    font-size: 25px; 
+    animation:  ${circleAnimation} 7.5s linear infinite;   
+    transform-origin: 0 140px; 
+
+`
+
+
+export const Span = styled.span`
+    position: absolute;
+    display: inline-block;
+    text-transform: uppercase;
+    transform-origin: 0 140px; 
+
+`
+export const MobileInto = styled.div`
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+@media screen and (min-width: 650px) {
+    display: none;
+};
+
+`

@@ -19,9 +19,6 @@ height:100vh;
     height:200vh;
 }
 
-@media screen and (max-width: 400px) {
-    height:230vh;
-}
 `
 
 export const Container = styled.div`
@@ -42,6 +39,8 @@ export const Container = styled.div`
         flex-direction: column;
         justify-content: space-around;
     }
+
+   
 
 
 `

@@ -13,7 +13,7 @@ export default function NavBar({toggleOpen, isOpen}) {
       <>
         <Nav>
           <NavBarContainer>
-              <NavLogo to='intro'>MaLy</NavLogo>
+              <NavLogo to='intro' offset={-80} >MaLy</NavLogo>
               {/* // responsive drawer containing hamburger menu icons */}
               <MobileMenu onClick={toggleOpen}>
                 <FaBars />
