@@ -1,39 +1,59 @@
-import React from 'react'
-import { IntroSection, Container, ScrollDown, FullName, CTAContainer, Links, Icon, MobileInto, CircleElements, Span, Test } from './IntroElements'
+import React, { useEffect, useRef, useState } from 'react'
+import { IntroSection, Container, ScrollDown, FullName, CTAContainer, Links, Icon, MobileInto, CircleElements, Span  } from './IntroElements'
 import Marquee from 'react-fast-marquee';
 import { introData } from './Data';
-import styled, { keyframes } from "styled-components"
 
 const circleTextArr = introData.circleText.split("")
  
-const Intro = ({ objectSize = 120, spacing = 12, offset = 30, overlap = false }) => {
+const Intro = () => {
 
-  const d = objectSize + spacing * 2
-  const r = objectSize / 2 + spacing / 2
+  const movingCircle = useRef(null) 
 
-  const CurvedText = styled.div`
-    font-size: 20px;
-    margin-bottom: ${overlap ? `-${r}px` : '0'};
-    width: ${d + offset * 2}px;
-    height: ${r + offset}px;
-    path {
-      fill: transparent;
-    }
-    text {
-      fill: currentColor;
-      text-anchor: middle;
-    }
-  `
+  const positionRef = useRef({
+    mouseX: 0,
+    mouseY: 0,
+    desitnationX: 0,
+    desitnationY: 0,
+    distanceX: 0,
+    distanceY:0,
+    key: -1,
+  })  
+
+  useEffect(() => {
+
+    document.addEventListener("mousemove", (event) => {
+
+      const { clientX, clientY } = event
+
+      const mouseX = clientX
+      const mouseY = clientY
+
+      positionRef.current.mouseX = mouseX - movingCircle.current.clientWidth/2;
+      positionRef.current.mouseY = mouseY - movingCircle.current.clientHeight;
+
+      movingCircle.current.style.transform = `translate3d(${mouseX - movingCircle.current.clientWidth / 2 }px, ${mouseY - movingCircle.current.clientHeight }px, 0)`
+
+
+    });
+
+    return () => {};
+  }, [])
+
 
   return (
     <IntroSection id='intro'>
     <Container>
+
       {/* Intro for mobile */}
-      <MobileInto> 
-        <CircleElements>{circleTextArr.map((item, index) => <Span style={{ transform: `rotate(${(index)*10.1}deg)`}} key={index}>{item}</Span>)} 
+      
+      <MobileInto ref={movingCircle}> 
+        <CircleElements >{circleTextArr.map((item, index) => <Span style={{ transform: `rotate(${(index)*10.1}deg)`}} key={index}>{item}</Span>)} 
         </CircleElements>
       </MobileInto>
+      
+
       {/* Intro for desktop */}
+
       <Marquee pauseOnHover direction='rigth' speed={60} gradient={false}>
         <FullName direction='row' >
         <em className='enhancedTitle'>Hey </em> <small>👋</small>, I'm Marie-Lyse  .
@@ -45,11 +65,15 @@ const Intro = ({ objectSize = 120, spacing = 12, offset = 30, overlap = false })
         </FullName>
       </Marquee>
     </Container>
-      <CTAContainer>
+
+
+    {/* Scroll down section */}
+
+      <CTAContainer to="stack">
         
         <Links to='stack'> <ScrollDown>Scroll Down</ScrollDown>
         <Icon /></Links>
-        <Links to='projects'> </Links>
+        <Links to='stack'> </Links>
 
       </CTAContainer>
      

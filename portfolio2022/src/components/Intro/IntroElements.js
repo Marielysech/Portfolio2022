@@ -82,16 +82,16 @@ export const Links = styled(LinkS)`
     } */
 `
 
-export const CTAContainer = styled.div`
-    width: fit-content;
+export const CTAContainer = styled(LinkS)`
     margin: -2rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #F8EFDB;
-    padding: 2rem 1rem 1rem 1rem;
-    border-top-left-radius: 15px;
+    width: fit-content
+    padding: 2rem 1rem;
+    border-radius: 15px;
     border-top-right-radius: 15px;
     border: 1px solid #F8EFDB;
 
@@ -137,9 +137,9 @@ export const CircleElements = styled.h2`
     position: absolute;
     user-select: none;
     pointer-events: none;
-    font-size: 25px; 
+    font-size: 40px; 
     animation:  ${circleAnimation} 7.5s linear infinite;   
-    transform-origin: 0 140px; 
+    transform-origin: 0 200px; 
 
 `
 
@@ -148,7 +148,8 @@ export const Span = styled.span`
     position: absolute;
     display: inline-block;
     text-transform: uppercase;
-    transform-origin: 0 140px; 
+    transform-origin: 0 200px; 
+
 
 `
 export const MobileInto = styled.div`
@@ -156,6 +157,7 @@ export const MobileInto = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    top: -300px;
 
 
 
