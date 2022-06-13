@@ -5,19 +5,23 @@ import styled from "styled-components";
 
 export const AboutSection = styled.div`
 background-color: #457383;
-height:100vh;
+height:fit-content;
+max-height: 100vh;
+padding-bottom:1rem;
 
 @media screen and (max-width: 900px) {
-        height:160vh;
+        height:fit-content;
+        padding-bottom: 2rem;
+
     }
 
-@media screen and (max-width: 780px) {
+/* @media screen and (max-width: 780px) {
     height:180vh;
 }
 
 @media screen and (max-width: 600px) {
-    height:200vh;
-}
+    height:220vh;
+} */
 
 `
 
@@ -26,7 +30,7 @@ export const Container = styled.div`
     grid-template-columns: 2fr 1fr;
     grid-gap: 80px;
     margin: 0 auto;
-    margin-top: 2rem;
+    margin-top: 0.5rem;
 
     @media screen and (max-width: 900px) {
         display: flex;
@@ -86,7 +90,7 @@ justify-content: space-between;
         export const Text = styled.p`
         width: 100%;
         margin-left: 0.6rem;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 400;
         color: #457383;    
         `
@@ -114,7 +118,7 @@ justify-content: space-between;
         //elements  
 
         export const TextShort = styled.p`
-        font-size: 15px;
+        font-size: 14px;
         width: 90%;
         text-align: left;
         color: #F8EFDB;

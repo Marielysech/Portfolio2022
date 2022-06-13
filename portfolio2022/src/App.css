@@ -5,6 +5,7 @@
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+
 em {
   border-bottom: 2px solid #FF6F59;
   transition:cubic-bezier(1, 0, 0, 1);
@@ -22,7 +23,6 @@ small {
 }
 
 .stackTitle {
-
   font-family:  'Space Grotesk', sans-serif;
 
 }

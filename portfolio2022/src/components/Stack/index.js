@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item, SectionTitle } from '../GlobalElements'
+import { SectionTitle } from '../GlobalElements'
 import { StackSection, StackGrid, Subtitle, FrontEndInfos, BackEndInfos, Langages } from './StackElements'
 import AutoRollingSlider from './AutoRollingSlider'
 import {stackObject} from './stackData.js'

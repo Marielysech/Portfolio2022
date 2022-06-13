@@ -2,7 +2,6 @@ import React from 'react'
 import { AboutSection, Container, Text, ShortElem, TextShort, ShortSection, TitleShort, SubSectionContainer, Emoji, ShortSectionL} from './AboutElements'
 import { SectionTitle } from '../GlobalElements'
 import { data } from './Data'
-import HandsPoint from '../../images/HandsPoint.png'
 
 
 

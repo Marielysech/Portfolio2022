@@ -69,11 +69,11 @@ const Intro = () => {
 
     {/* Scroll down section */}
 
-      <CTAContainer to="stack">
+      <CTAContainer to="about" >
         
-        <Links to='stack'> <ScrollDown>Scroll Down</ScrollDown>
+        <Links to='about'> <ScrollDown>Scroll Down</ScrollDown>
         <Icon /></Links>
-        <Links to='stack'> </Links>
+        <Links to='about'> </Links>
 
       </CTAContainer>
      

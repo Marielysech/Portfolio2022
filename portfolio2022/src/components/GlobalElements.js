@@ -4,11 +4,13 @@ import { styled as styledMUI } from '@mui/material/styles';
 
 export const SectionTitle = styled.h1`
 
-    font-size: 64px;
+    font-size: 60px;
     color: #F8EFDB;
     top:0;
     padding-left: 2rem;
     margin-bottom: 1rem;
+    padding-top: 5rem;
+
     &::after {
         content: "○";
         font-size: 24px;

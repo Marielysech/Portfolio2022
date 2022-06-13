@@ -5,7 +5,7 @@ import {BsArrowDownCircleFill} from 'react-icons/bs'
 export const IntroSection = styled.div`background-color: #457383;
 height:100vh;
 padding-top: 2rem;
-
+margin-bottom: -2.5rem;
 
 /* @media screen and (max-width: 900px) {
         height:160vh;
@@ -83,17 +83,18 @@ export const Links = styled(LinkS)`
 `
 
 export const CTAContainer = styled(LinkS)`
-    margin: -2rem auto;
+    margin: -3rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #F8EFDB;
-    width: fit-content
+    width: fit-content;
     padding: 2rem 1rem;
     border-radius: 15px;
     border-top-right-radius: 15px;
     border: 1px solid #F8EFDB;
+    cursor: pointer;
 
     @media screen and (max-width: 500px) {
             display: none;
@@ -140,7 +141,7 @@ export const CircleElements = styled.h2`
     font-size: 40px; 
     animation:  ${circleAnimation} 7.5s linear infinite;   
     transform-origin: 0 200px; 
-
+    z-index: 999;
 `
 
 

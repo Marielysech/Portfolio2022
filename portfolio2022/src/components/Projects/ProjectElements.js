@@ -8,7 +8,7 @@ export const ProjectsSection = styled.div`
     background: #457383;
     height: 100vh;
 
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 900px) {
         height: 275vh;
     }
 

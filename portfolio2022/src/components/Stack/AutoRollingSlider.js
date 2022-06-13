@@ -14,6 +14,7 @@ import { padding } from '@mui/system';
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
+  fontSize: '12px',
   padding: theme.spacing(1),
   textAlign: 'center',
   display: 'flex',

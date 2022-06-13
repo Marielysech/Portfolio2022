@@ -72,7 +72,7 @@ export const NavLinks = styled(LinkS)`
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 0 1rem;
+    margin: 0 3rem 0 0;
     color: #F8EFDB;
     justify-content: center;
     transition: 0.2s ease-in-out;

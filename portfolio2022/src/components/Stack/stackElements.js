@@ -13,7 +13,8 @@ export const StackGrid = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 2rem auto;
+    margin: 1rem auto;
+    margin-top: 2.5rem;
     text-align: center;
     width: 70%;
 
@@ -37,7 +38,7 @@ export const FrontEndInfos = styled.div``
 export const Subtitle = styled.h2`
     text-align: center;
     width: fit-content;
-    margin: 0 auto;
+    margin: -1rem auto;
     font-size: 45px;
 
     
@@ -50,7 +51,7 @@ export const Langages = styled.div`
     background-color: #F8EFDB ;
     margin: 0.5rem auto;
     color: #457383;
-    font-size: 20px;
+    font-size: 17px;
     width: 60%;
     border-radius: 10px;
     padding: 0.3rem;
