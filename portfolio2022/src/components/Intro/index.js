@@ -69,11 +69,11 @@ const Intro = () => {
 
     {/* Scroll down section */}
 
-      <CTAContainer to="about" >
+      <CTAContainer to="about" smooth={true} duration={500} spy={true} exact='true' >
         
-        <Links to='about'> <ScrollDown>Scroll Down</ScrollDown>
+        <Links to='about' smooth={true} duration={500} spy={true} exact='true'> <ScrollDown>Scroll Down</ScrollDown>
         <Icon /></Links>
-        <Links to='about'> </Links>
+        <Links to='about' smooth={true} duration={500} spy={true} exact='true'> </Links>
 
       </CTAContainer>
      

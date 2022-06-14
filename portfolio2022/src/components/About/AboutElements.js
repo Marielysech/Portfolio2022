@@ -10,7 +10,7 @@ max-height: 100vh;
 padding-bottom:1rem;
 
 @media screen and (max-width: 900px) {
-        height:fit-content;
+        max-height: fit-content;
         padding-bottom: 2rem;
 
     }

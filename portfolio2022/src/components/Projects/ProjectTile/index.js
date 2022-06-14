@@ -8,7 +8,7 @@ const ProjectTile = ({item = [], toggleActive, blur}) => {
 
   return (
     <ProjectCard>
-      <ProjectImg src='https://images.unsplash.com/photo-1597633425046-08f5110420b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80' />
+      <ProjectImg src={item.img} />
       <LinkContainer>
         <a href={item.link} target="_blank">
           <Website/>
@@ -20,12 +20,9 @@ const ProjectTile = ({item = [], toggleActive, blur}) => {
       <Title>Snoop</Title>
       <Description>{item.description}</Description>
         <TagsContainer>
-          {item?.tags && item.tags.map((tag, index) => (<Tag onMouseEnter={(e) => toggleActive(e)} onMouseLeave={(e) => toggleActive(e)} key={index} className={blur === 'blur' ? 'noBlur' : 'blur'}>{tag}</Tag>))}
-          <Tag>MERN Stack</Tag>
-          <Tag>MUI</Tag>
-
+          {item?.tags && item.tags.map((tag, index) => (<Tag onMouseEnter={(e) => toggleActive(e)} onMouseLeave={(e) => toggleActive(e)} key={index}>{tag}</Tag>))}
         </TagsContainer>
-        <Button>Read more</Button>
+        {/* <Button>Read more</Button> */}
     </ProjectCard>
   )
 }

@@ -7,21 +7,11 @@ height:100vh;
 padding-top: 2rem;
 margin-bottom: -2.5rem;
 
-/* @media screen and (max-width: 900px) {
-        height:160vh;
-    }
+@media only screen and (max-width: 480px) {
+    padding-top: 1rem;
+    height:105vh;
 
-@media screen and (max-width: 780px) {
-    height:180vh;
-}
-
-@media screen and (max-width: 600px) {
-    height:200vh;
-}
-
-@media screen and (max-width: 400px) {
-    height:230vh;
-} */
+    } 
 `
 
 export const Container = styled.div`
@@ -96,9 +86,9 @@ export const CTAContainer = styled(LinkS)`
     border: 1px solid #F8EFDB;
     cursor: pointer;
 
-    @media screen and (max-width: 500px) {
-            display: none;
-        }
+    @media only screen  and (max-width: 480px) {
+    padding-bottom: 2.8rem
+} 
 
     &:hover {
         background-color: #F8EFDB;

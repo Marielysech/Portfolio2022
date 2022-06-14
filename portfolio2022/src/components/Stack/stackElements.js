@@ -4,8 +4,10 @@ export const StackSection = styled.div`
 background-color: #457383;
 height:100vh;
 
-@media screen and (max-width: 850px) {
-        height:130vh;
+@media screen and (max-width: 900px) {
+        height: fit-content;
+        padding-bottom: 2rem;
+
     }
 `
 
@@ -30,16 +32,29 @@ export const StackGrid = styled.div`
         width: 80%;
     }
 
+   
+
 
 `
 
-export const FrontEndInfos = styled.div``
+export const Infos = styled.div`
+
+@media screen and (max-width: 480px) {
+        padding-top: 4.4rem;
+    }
+    
+`
 
 export const Subtitle = styled.h2`
     text-align: center;
     width: fit-content;
     margin: -1rem auto;
     font-size: 45px;
+
+    @media screen and (max-width: 480px) {
+        padding-top: 4rem;
+    }
+   
 
     
 `

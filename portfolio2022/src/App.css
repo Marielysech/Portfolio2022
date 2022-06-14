@@ -5,6 +5,9 @@
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+body {
+  background-color: #457383;
+}
 
 em {
   border-bottom: 2px solid #FF6F59;

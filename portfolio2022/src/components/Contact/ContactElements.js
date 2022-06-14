@@ -4,9 +4,11 @@ export const ContactSection = styled.div`
     background-color: #457383;
     height:110vh;
 
-    @media screen and (max-width: 850px) {
-            height:fit-content;
-        }
+    @media screen and (max-width: 900px) {
+        height: fit-content;
+        padding-bottom: 2rem;
+
+    }
 `
 
 export const Bubble = styled(MdChatBubble)`
@@ -17,6 +19,9 @@ export const Bubble = styled(MdChatBubble)`
     @media screen and (max-width: 900px) {
         font-size: 300px;
     }
+
+
+
 
 `
 export const ContentContainer = styled.div`
@@ -69,4 +74,14 @@ export const Image = styled.img`
     width: 30%;
     margin: 0 auto;
     display: block;
+
+    @media only screen and (max-width: 800px) {
+        width: 50%;
+        margin-top: 3rem;
+    } 
+
+    @media only screen and (max-width: 480px) {
+        width: 65%;
+        margin-top: 5rem;
+    } 
 `

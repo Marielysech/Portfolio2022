@@ -32,7 +32,7 @@ export const footerData = {
     
     {
         title: "Location",
-        contenu: "Madrid"
+        contenu: "Madrid, Spain"
     }
     ],
 

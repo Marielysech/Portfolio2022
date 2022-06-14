@@ -38,7 +38,7 @@ export const TagsContainer = styled.div`
 export const Tag = styled.p`
     background-color: #FF6F5999;
     width: fit-content;
-    padding: 0.3rem 0.7rem;
+    padding: 0.3rem 0.5rem;
     margin: .4rem 0;
     font-size: 80%;
     border-radius: 15px;
@@ -65,12 +65,12 @@ padding-top: 0.7rem;
 `
 
 export const Website = styled(FiExternalLink)`
-color: black;
+  color: #457383;
 cursor: pointer;
 font-size: 25px;
 
 &:hover {
-  color: #457383;
+  color: #FF6F59;
   font-size: 27px;
   transition: 0.3s ease-in-out
 }
@@ -78,12 +78,12 @@ font-size: 25px;
 `
 
 export const Github = styled(AiFillGithub)`
-color: black;
+color: #457383;
 cursor: pointer;
 font-size: 25px;
 
 &:hover {
-  color:#457383;
+  color: #FF6F59;
   font-size: 27px;
   transition: 0.3s ease-in-out
 }
@@ -91,8 +91,8 @@ font-size: 25px;
 
 export const ProjectImg = styled.img`
 max-width: 100%;
+max-height: 160px;
 border-radius: 25px;
-border: 2px solid #457383;
 
 `
 

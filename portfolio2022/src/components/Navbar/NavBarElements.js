@@ -78,7 +78,7 @@ export const NavLinks = styled(LinkS)`
     transition: 0.2s ease-in-out;
 
     &.active {
-        border-bottom: 3px solid black;
+        border-bottom: 5px solid #FF6F59;
     }
 
     @media screen and (max-width: 768px) {

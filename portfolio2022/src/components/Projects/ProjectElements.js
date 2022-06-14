@@ -9,7 +9,9 @@ export const ProjectsSection = styled.div`
     height: 100vh;
 
     @media screen and (max-width: 900px) {
-        height: 275vh;
+        height: fit-content;
+        padding-bottom: 2rem;
+
     }
 
 `
