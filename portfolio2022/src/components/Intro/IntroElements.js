@@ -73,7 +73,7 @@ export const Links = styled(LinkS)`
 `
 
 export const CTAContainer = styled(LinkS)`
-    margin: -3rem auto;
+    margin: -3.7rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;

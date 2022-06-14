@@ -12,11 +12,11 @@ export const data = {
             github: "https://github.com/Marielysech/Snoop"
         },
         {
-            name: "Snoop",
+            name: "Dog Picker Game",
             description: "Dog picker is a game where you choose your participant name and personality and then to choose your favorite between series of two dogs. Play until only one dog left. ",
             stack: "MERN Stack",
             tags: ["DOM Mamipulation", "Vanilla JS", "CSS3", "Event Listening"],
-            website: "www.snoop.cool",
+            website: "https://marielysech.github.io/Dog-match-game/",
             github: "https://github.com/Marielysech/Dog-match-game",
             img: "https://user-images.githubusercontent.com/99414851/171852044-fcf0f074-0c06-4556-a848-d757cfe29be2.png"
         },

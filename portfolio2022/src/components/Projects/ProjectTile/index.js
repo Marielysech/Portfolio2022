@@ -10,7 +10,7 @@ const ProjectTile = ({item = [], toggleActive, blur}) => {
     <ProjectCard>
       <ProjectImg src={item.img} />
       <LinkContainer>
-        <a href={item.link} target="_blank">
+        <a href={item.website} target="_blank">
           <Website/>
         </a>
         <a href={item.github} target="_blank">

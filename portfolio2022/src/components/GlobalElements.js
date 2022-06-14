@@ -8,7 +8,7 @@ export const SectionTitle = styled.h1`
     color: #F8EFDB;
     top:0;
     padding-left: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding-top: 5rem;
 
     &::after {
