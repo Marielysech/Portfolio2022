@@ -84,6 +84,10 @@ export const NavLinks = styled(LinkS)`
     @media screen and (max-width: 768px) {
         display: none;
     }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 22px;
+    }
 `
 
 export const NavMenu = styled.div`

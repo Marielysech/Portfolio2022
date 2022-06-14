@@ -24,6 +24,11 @@ export const Title = styled.h3`
   margin: -0.2rem 0.5rem ;
   color:#457383;
 
+  @media screen and (min-width: 1300px) {
+    font-size: 22px;
+    padding-top: 1rem;
+    width: 70%;
+    }
 `
 
 export const TagsContainer = styled.div`
@@ -44,6 +49,11 @@ export const Tag = styled.p`
     border-radius: 15px;
     font-weight: 600;
     color: white;
+
+    @media screen and (min-width: 1300px) {
+      font-size: 90%;
+      padding: 0.5rem 0.7rem ;
+    }
 `
 
 export const Description = styled.p`
@@ -53,6 +63,9 @@ export const Description = styled.p`
   height: 40%;
   color:#457383;
 
+  @media screen and (min-width: 1300px) {
+    font-size: 18px;
+    }
 
 `
 
@@ -62,6 +75,10 @@ display: flex;
 flex-direction: row;
 justify-content: space-evenly;
 padding-top: 0.7rem;
+
+@media screen and (min-width: 1300px) {
+    padding-top: 1rem;
+    }
 `
 
 export const Website = styled(FiExternalLink)`
@@ -91,8 +108,13 @@ font-size: 25px;
 
 export const ProjectImg = styled.img`
 max-width: 100%;
-max-height: 160px;
+max-height: 42%;
 border-radius: 25px;
+object-fit: cover;
+
+@media screen and (min-width: 1300px) {
+    font-size: 18px;
+    }
 
 `
 

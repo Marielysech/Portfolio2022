@@ -68,6 +68,11 @@ export const Button = styled.a`
         background-color: #FF6F59;
         transition: 0.3s ease-in-out;
     }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      margin-top: 2rem;
+    }
 `
 
 export const Image = styled.img`
@@ -84,4 +89,8 @@ export const Image = styled.img`
         width: 65%;
         margin-top: 5rem;
     } 
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 5rem;
+    }
 `

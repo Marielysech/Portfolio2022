@@ -39,20 +39,29 @@ export const StackGrid = styled.div`
 
 export const Infos = styled.div`
 
+
 @media screen and (max-width: 480px) {
         padding-top: 4.4rem;
     }
-    
+
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 4.4rem;
+    }
 `
 
 export const Subtitle = styled.h2`
     text-align: center;
     width: fit-content;
-    margin: -1rem auto;
+    margin: -1.5rem auto;
     font-size: 45px;
 
     @media screen and (max-width: 480px) {
         padding-top: 4rem;
+    }
+
+    @media screen and (min-width: 1300px) {
+        font-size: 60px;
+        padding-bottom: 3rem;
     }
    
 
@@ -85,5 +94,9 @@ export const Langages = styled.div`
     @media screen and (max-width: 1100px) {
         width: 60%;
         
+    }
+
+    @media screen and (min-width: 1300px) {
+        font-size: 25px;
     }
 `

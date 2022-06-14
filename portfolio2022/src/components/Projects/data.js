@@ -4,7 +4,7 @@ export const data = {
     [
         {
             name: "Snoop",
-            description: "Snoop is a social media app from a dog's perspective. Users can create post and see others' posts. They can easy access all post freom explore section or create their personalized feed by following users.",
+            description: "Snoop is a social media app from a dog's perspective. Users can create posts and see others' posts. They can easily access all post from explore section or create their personalized feed by following users.",
             stack: "MERN Stack",
             tags: ["MERN Stack", "MUI Library", "Multer", "Rest API"],
             website: "https://www.youtube.com/watch?v=SzCDP1xYcAY&t=1s",
@@ -13,7 +13,7 @@ export const data = {
         },
         {
             name: "Dog Picker Game",
-            description: "Dog picker is a game where you choose your participant name and personality and then to choose your favorite between series of two dogs. Play until only one dog left. ",
+            description: "Dog picker is a game where you choose your participant's name and personality and then choose your favorite between different series of two dogs. Play until only one dog is left.",
             stack: "MERN Stack",
             tags: ["DOM Mamipulation", "Vanilla JS", "CSS3", "Event Listening"],
             website: "https://marielysech.github.io/Dog-match-game/",
@@ -22,7 +22,7 @@ export const data = {
         },
         {
             name: "Movie Application",
-            description: "Movie app is a FullStack application that allows user to create their account to explore existing movies in order add them to their watchlist. they can search movies by category, title or year of release. ",
+            description: "Movie app is a FullStack application that allows users to create their accounts to explore existing movies to add them to their watchlist. They can search movies by category, title, or year of release.",
             stack: "MERN Stack",
             tags: ["MERN Stack", "Authentication", "Rest API" ],
             website: "https://movie-app-marielyse.herokuapp.com/",

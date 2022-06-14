@@ -58,6 +58,10 @@ export const Container = styled.div`
         display: none;
     };
 
+    @media screen and (min-width: 1300px) {
+        font-size: 160px
+    }
+
 
     `
 
@@ -73,7 +77,7 @@ export const Links = styled(LinkS)`
 `
 
 export const CTAContainer = styled(LinkS)`
-    margin: -3.7rem auto;
+    margin: -2.5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,8 +91,14 @@ export const CTAContainer = styled(LinkS)`
     cursor: pointer;
 
     @media only screen  and (max-width: 480px) {
-    padding-bottom: 2.8rem
-} 
+        margin: -7.3rem auto;
+
+}
+
+    @media screen and (min-width: 1300px) {
+        margin-top: 7.5%;
+    }
+
 
     &:hover {
         background-color: #F8EFDB;

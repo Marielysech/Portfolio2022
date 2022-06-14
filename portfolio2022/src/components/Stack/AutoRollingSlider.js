@@ -9,25 +9,27 @@ import { SiJusteat } from 'react-icons/si';
 import { stackObject } from './stackData';
 import Marquee from 'react-fast-marquee';
 import { padding } from '@mui/system';
+import { red } from '@mui/material/colors';
 
 
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
-  fontSize: '12px',
+  fontSize: '95%',
   padding: theme.spacing(1),
   textAlign: 'center',
   display: 'flex',
   color: '#457383',
   alignItems: 'center',
   backgroundColor: '#F8EFDB',
-  width: '50%',
+  width: '55%',
   margin: '0 auto',
   // color: theme.palette.text.secondary,
+  
 }));
 
 const titleStack = {
-  paddingLeft: '0.5rem'
+  paddingLeft: '0.5rem',
 }
 
 

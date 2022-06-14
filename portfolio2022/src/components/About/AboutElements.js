@@ -44,7 +44,9 @@ export const Container = styled.div`
         justify-content: space-around;
     }
 
-   
+    @media screen and (min-width: 1300px) {
+        margin: 4.5rem 0;
+    }
 
 
 `
@@ -93,7 +95,11 @@ margin-top: 0.5rem;
         margin-left: 0.6rem;
         font-size: 13px;
         font-weight: 400;
-        color: #457383;    
+        color: #457383;   
+        
+        @media screen and (min-width: 1300px) {
+        font-size: 23px;
+    }
         `
 
 
@@ -134,6 +140,9 @@ margin-top: 0.5rem;
             width: 50%;
          }
 
+         @media screen and (min-width: 1300px) {
+        font-size: 20px;
+    }
         `
         export const TitleShort = styled.h3`
         color: #F8EFDB;
@@ -156,6 +165,11 @@ margin-top: 0.5rem;
         font-weight: bold;
         font-size: 13px;
         padding: 0.2rem 0.5rem ;
-        border-radius: 10px
+        border-radius: 10px;
+
+        @media screen and (min-width: 1300px) {
+        font-size: 23px;
+    }
+        
         
         `

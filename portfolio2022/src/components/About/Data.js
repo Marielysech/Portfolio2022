@@ -22,7 +22,7 @@ export const data = {
         {
             icon:"🤝  ", 
             text: function createMarkup() {
-                return {__html:"I'm convinced that teamwork is essential to reach challenging objectives and grow on a personal perspective, that's why a good <em>team player</em>. However <strong>I'm highly adaptable</strong> and know how to work autonomously when it better fits your need."};
+                return {__html:"I'm convinced that teamwork is essential to reach challenging objectives and grow on a personal perspective, that's why I'm a good <em>team player</em>. However <strong>I'm highly adaptable</strong> and know how to work autonomously when it better fits your need."};
              },
         },
         {

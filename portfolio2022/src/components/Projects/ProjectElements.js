@@ -36,6 +36,11 @@ export const ProjectGrid = styled.div`
         grid-template-columns: 1fr;
         width: 80%
     }
+
+    @media screen and (min-width: 1300px) {
+        grid-gap: 50px 15px;
+
+    }
     
 
 

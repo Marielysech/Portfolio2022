@@ -17,7 +17,7 @@ const ProjectTile = ({item = [], toggleActive, blur}) => {
           <Github/>
         </a>
       </LinkContainer>
-      <Title>Snoop</Title>
+      <Title>{item.name}</Title>
       <Description>{item.description}</Description>
         <TagsContainer>
           {item?.tags && item.tags.map((tag, index) => (<Tag onMouseEnter={(e) => toggleActive(e)} onMouseLeave={(e) => toggleActive(e)} key={index}>{tag}</Tag>))}
