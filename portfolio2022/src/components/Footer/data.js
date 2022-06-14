@@ -1,6 +1,6 @@
 import {ImLinkedin} from 'react-icons/im'
-import {AiFillGithub, AiFillIdcard} from 'react-icons/ai'
-
+import {AiFillGithub} from 'react-icons/ai'
+import {BsFilePersonFill} from 'react-icons/bs'
 
 
 export const footerData = {
@@ -18,7 +18,7 @@ export const footerData = {
             },
             {
                 lien: "https://drive.google.com/file/d/12iGuPsXfnjCMjhWU0BQyrbSTlBopZN4F/view?usp=sharing",
-                icon: <AiFillIdcard/>
+                icon: <BsFilePersonFill/>
             },
         ],
     },
@@ -31,9 +31,11 @@ export const footerData = {
     }, 
     
     {
-        title: "City",
+        title: "Location",
         contenu: "Madrid"
     }
-    ]
+    ],
+
+    copyRight: "Copyright ©2022 Marie-Lyse Charrière"
 
 }

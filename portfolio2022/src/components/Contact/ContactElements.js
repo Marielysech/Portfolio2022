@@ -2,7 +2,7 @@ import styled from "styled-components";
 import {MdChatBubble} from 'react-icons/md'
 export const ContactSection = styled.div`
     background-color: #457383;
-    height:100vh;
+    height:110vh;
 
     @media screen and (max-width: 850px) {
             height:fit-content;

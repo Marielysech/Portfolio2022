@@ -26,12 +26,8 @@ export default function SiteContent() {
     setIsActive(!isActive)
     blur === 'noBlur' ? setBlur('blur') : setBlur('noBlur')
 
-    console.count('event'  + isActive)
-    console.log('event' +isActive)
   }
 
-  console.count(isActive)
-  console.log(isActive)
   const [isOpen, SetIsOpen] = useState(false)
 
   const toggleOpen = () => {

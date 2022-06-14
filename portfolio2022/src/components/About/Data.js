@@ -49,7 +49,7 @@ export const data = {
         descr: ["French: Native", "English: Fluent", "Spanish: Intermediate"], 
     },
     availability: {
-        title: "Practical details",
+        title: "Availability",
         descr: ["Freelancing","Open for remote within the EU", "Open for onsite position in Madrid"]
 
     }

@@ -20,7 +20,10 @@ const About = () => {
       </SubSectionContainer>
 
       <SubSectionContainer>
-
+        <ShortSection>
+            <TitleShort>{data.iceBreaker.title}</TitleShort>
+            <TextShort dangerouslySetInnerHTML={data.iceBreaker.descr()}></TextShort>
+          </ShortSection>
         <ShortSection>
           <TitleShort>{data.Languages.title}</TitleShort>
           <div>{data.Languages.descr.map((item,index) => <ShortElem key={index}>{item}</ShortElem>)}</div>
@@ -31,10 +34,7 @@ const About = () => {
           <div>{data.availability.descr.map((item,index) => <ShortElem key={index}>{item}</ShortElem>)}</div>
         </ShortSection>
 
-        <ShortSection>
-          <TitleShort>{data.iceBreaker.title}</TitleShort>
-          <TextShort dangerouslySetInnerHTML={data.iceBreaker.descr()}></TextShort>
-        </ShortSection>
+        
 
       </SubSectionContainer>
     </Container>

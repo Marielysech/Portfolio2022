@@ -29,7 +29,7 @@ const Intro = () => {
       const mouseY = clientY
 
       positionRef.current.mouseX = mouseX - movingCircle.current.clientWidth/2;
-      positionRef.current.mouseY = mouseY - movingCircle.current.clientHeight;
+      positionRef.current.mouseY = mouseY - movingCircle.current.clientHeight/2;
 
       movingCircle.current.style.transform = `translate3d(${mouseX - movingCircle.current.clientWidth / 2 }px, ${mouseY - movingCircle.current.clientHeight }px, 0)`
 

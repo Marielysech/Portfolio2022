@@ -1,25 +1,30 @@
 import { footerData } from "./data"
-import { LinkContainer, IconSection, Link, Title, Contact, CContent } from "./FooterElements"
+import { FooterSection, SectionContainer, FSmallSection, Title, Icons, CContent, SocialIcon, CopyRigth} from "./FooterElements"
 
 
 export default function Footer() {
     return (
-            <LinkContainer>
-                <IconSection>
-                    <Link>
+            <FooterSection>
+                <SectionContainer>
+                    <FSmallSection>
                         <Title>{footerData.Links.title}</Title>
+                        <Icons>
                     {footerData.Links.links.map((item, index) => 
-                        <a key={index} href={item.lien} target="_blank">
+                        <SocialIcon key={index} href={item.lien} target="_blank">
                             {item.icon}
-                        </a> )
-                    }
-                    </Link>
-                    <Contact>
-                        <Title>{footerData.Contact.title}</Title>
-                        <CContent>{footerData.Contact.contenu}</CContent>
-                    </Contact>
-                </IconSection>
-               
-            </LinkContainer>
+                        </SocialIcon> )}
+                        </Icons>
+                    </FSmallSection>
+                    
+                    {footerData.Contact.map((item, index) =>
+                    <FSmallSection key={index}>
+                        <Title>{item.title}</Title>
+                        <CContent>{item.contenu}</CContent>
+                    </FSmallSection> )}
+                        
+                </SectionContainer>
+
+                <CopyRigth>{footerData.copyRight}</CopyRigth>
+            </FooterSection>
     )
 }

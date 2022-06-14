@@ -54,6 +54,7 @@ export const SubSectionContainer = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+margin-top: 0.5rem;
 
 @media screen and (max-width: 900px) {
         margin-bottom: -2rem;
@@ -90,7 +91,7 @@ justify-content: space-between;
         export const Text = styled.p`
         width: 100%;
         margin-left: 0.6rem;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 400;
         color: #457383;    
         `
@@ -118,7 +119,7 @@ justify-content: space-between;
         //elements  
 
         export const TextShort = styled.p`
-        font-size: 14px;
+        font-size: 13px;
         width: 90%;
         text-align: left;
         color: #F8EFDB;
@@ -153,7 +154,7 @@ justify-content: space-between;
         margin: 0.5rem .5rem;
         width: fit-content;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 13px;
         padding: 0.2rem 0.5rem ;
         border-radius: 10px
         
